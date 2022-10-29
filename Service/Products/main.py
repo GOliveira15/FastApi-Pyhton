@@ -23,6 +23,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def ReadRoot():
+    return {"Gabriel": "Oliveira"}
+
 @app.get("/api/Products")
 async def GetProducts():
     response = await GetAllProducts()
