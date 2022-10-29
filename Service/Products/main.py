@@ -1,16 +1,14 @@
 from fastapi import FastAPI, HTTPException
-
-from model import Product
-
-from database import (
+from Models.Product import Product
+from Config.Database import (
     GetProduct,
     GetAllProducts,
     AddItem,
     UpdateItem,
     DeleteItem
 )
-
 from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
 
 origins = [
