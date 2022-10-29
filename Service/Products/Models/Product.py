@@ -6,5 +6,3 @@ class Product(BaseModel):
     Category: str
     Brand: str
     Price: float
-    IsAvailable: bool
-    Quantity: int

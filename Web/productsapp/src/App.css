@@ -1,8 +1,28 @@
 .App {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Nav {
+  width: 100%;
+  font-size: 30px;
+  padding: 25px;
+  background-color: #FF6914;
+  color: white;
+}
+
+.Main {
+  margin-top: 50px;
+}
+
+.Footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Button {
+  margin-left: 5px;
 }
 
 /* .App-logo {
