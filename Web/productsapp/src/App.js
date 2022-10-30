@@ -12,12 +12,14 @@ function App() {
   const [brand, setBrand] = useState('')
   const [price, setPrice] = useState('')
 
+  const value = null;
+
   useEffect(() => {
     axios.get('http://localhost:8000/api/Products')
       .then(res => {
         setProductsList(res.data)
       })
-  });
+  }, []);
 
   const addProductHandler = () => {
     axios.post('http://localhost:8000/api/Products/', { 'Id': id, 'Name': name, "Category": category, "Brand": brand, "Price": price })
