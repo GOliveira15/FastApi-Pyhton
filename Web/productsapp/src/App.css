@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #FAFAFA;
+  padding-bottom: 50px;
 }
 
 .Nav {
@@ -16,9 +18,14 @@
   margin-top: 50px;
 }
 
+.Section {
+  background-color: white;
+  padding: 50px;
+  border-radius: 25px;
+}
+
 .Footer {
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .Button {
