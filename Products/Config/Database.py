@@ -1,7 +1,7 @@
 import motor.motor_asyncio
 from Models.Product import Product
 
-client = motor.motor_asyncio.AsyncIOMotorClient('https://productsdb.mongo.cosmos.azure.com:443/')
+client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://productsdb:8jiEIYOM9qKSCHUdqksIcG6ggNAQhGAcSQzvWx6HTwdt2vdU5p6zbbRHk1JhlPqghToT9qGO6dZ3ACDbjkn7pg==@productsdb.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@productsdb@')
 database = client.ProductList
 collection = database.Product
 
