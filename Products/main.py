@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
-    "http://localhost:3000",
+    "https://web-productsapp.azurewebsites.net",
 ]
 
 app.add_middleware(
