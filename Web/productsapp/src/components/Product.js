@@ -3,13 +3,13 @@ import React from 'react';
 
 function ProductItem(props) {
   const deleteProductHandler = (id) => {
-    axios.delete(`http://localhost:8000/api/Products/${id}`)
+    axios.delete(`https://service-products.azurewebsites.net/api/Products/${id}`)
       .then(res => console.log(res.data))
   }
 
   return (
     <div>
-      <span style={{ fontWeight: 'bold, underline' }}> {props.product.Id} | {props.product.Name}, {props.product.Category}, {props.product.Brand}, R${props.product.Price}</span>
+      <span style={{ fontWeight: 'bold, underline' }}> {props.product.Id}, {props.product.Name}, {props.product.Category}, {props.product.Brand}, R${props.product.Price}</span>
       <button onClick={() => deleteProductHandler(props.product.Id)} className="btn btn-outline-danger Button" style={{ 'borderRadius': '50px', }}>Excluir</button>
       <hr></hr>
     </div>
